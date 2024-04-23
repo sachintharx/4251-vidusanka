@@ -7,12 +7,12 @@ pipeline {
   stages {
     stage('Docker Build'){
       steps {
-        sh 'docker build -t irajapaksha/4130-rajapaksha .'
+        sh 'docker build -t vidusanka/hashar4251 .'
       }
     }
     stage('Docker Run'){
       steps{
-        sh 'docker run -d -p 5000:3000 irajapaksha/4130-rajapaksha'
+        sh 'docker run -d -p 5000:3000 vidusanka/hashar4251'
       }
     }
     stage('Final'){
